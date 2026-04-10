@@ -1,0 +1,33 @@
+# EYEQ — Python Dependencies
+# Install: pip install -r requirements.txt
+
+# ── Core AI ───────────────────────────────────────────────────────
+ultralytics==8.0.196       # YOLOv8 — object detection (helmet, crowd, plate)
+mediapipe==0.10.7          # Hand gesture recognition (SOS detection)
+easyocr==1.7.1             # OCR for number plate reading
+opencv-python==4.8.1.78    # Video capture and frame processing
+numpy==1.24.4              # Numerical operations (trend analysis)
+scipy==1.11.3              # Signal processing helpers
+
+# ── Backend ───────────────────────────────────────────────────────
+fastapi==0.104.1           # REST API framework
+uvicorn[standard]==0.24.0  # ASGI server
+websockets==12.0           # WebSocket support
+pydantic==2.4.2            # Data validation
+
+# ── Database ──────────────────────────────────────────────────────
+sqlalchemy==2.0.23         # ORM
+psycopg2-binary==2.9.9     # PostgreSQL adapter
+
+# ── Alerts ────────────────────────────────────────────────────────
+twilio==8.10.0             # SMS alerts (optional)
+firebase-admin==6.2.0      # Firebase push notifications (optional)
+requests==2.31.0           # HTTP client
+
+# ── Utilities ─────────────────────────────────────────────────────
+python-dotenv==1.0.0       # Environment variables (.env file)
+Pillow==10.1.0             # Image utilities
+
+# ── Optional: GPU acceleration ────────────────────────────────────
+# torch==2.1.0+cu118       # Uncomment if NVIDIA GPU available
+# torchvision==0.16.0+cu118
